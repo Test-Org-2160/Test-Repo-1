@@ -1,12 +1,9 @@
 def count_letters():
     word = input("Enter a word to count it's letters: ")
     if word.isalpha():
-        letter_count_dict = dict()
+        letter_count = 0
         for letter in word:
-            if letter not in letter_count_dict:
-                letter_count_dict[letter] = 1
-            else: 
-                letter_count_dict[letter] += 1
-        print(letter_count_dict)
+            letter_count += 1
+        return(letter_count)
     else:
         raise ValueError("You didn't enter a word :/")
