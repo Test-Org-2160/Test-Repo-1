@@ -1,5 +1,4 @@
-def count_letters():
-    word = input("Enter a word to count it's letters: ")
+def count_letters(word):
     if word.isalpha():
         letter_count = 0
         for letter in word:
